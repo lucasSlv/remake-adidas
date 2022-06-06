@@ -8,13 +8,15 @@
     box-sizing: border-box;
 }
 
+header {
+    border-bottom: 2px solid #808080;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 20px;
-    border-bottom-style: solid ;
-    border-bottom-color: #808080;
 }
 
 .navigation {
@@ -68,7 +70,7 @@ a {
     color: #000;
     text-decoration: none;
     font-weight: 600;
-  }
+}
 
 input[type=text] {
     border: 1px solid #dbdbdb;
@@ -109,8 +111,15 @@ input[type=text] {
 
 .products {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin: 4px;
+}
+
+@media screen and (max-width:789px){
+    .products {
+        justify-content: center;
+    }
 }
 
 .footer-basic {
